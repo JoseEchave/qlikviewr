@@ -20,7 +20,7 @@ read_qvd <- function(qvd_path,qlikview_exe = "C:/Program Files/QlikView/Qv.EXE")
 
   system(cmd_command)
 
- data <-  readr::read_csv(temp_file)
+ data <-  readr::read_csv2(temp_file)
  #Doesn't work file.remove(temp_file,showWarnings = FALSE)
 
  data
