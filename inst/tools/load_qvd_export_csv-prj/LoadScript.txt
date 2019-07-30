@@ -26,4 +26,4 @@ $(path)
 (qvd);
 
 
-store data into $(export_path)(txt);
+store data into $(export_path)(delimiter is ';');
