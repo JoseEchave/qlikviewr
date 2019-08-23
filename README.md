@@ -1,6 +1,8 @@
 # qlikviewr
 Run qlikview from R and load qvd data
 
+We use qlikview at work, so I created this package so that my workflows are reproducible (and potentially automated) all within R.
+
 Works by sending CMD command lines to qlikview. It then passes variables defined in R to qlikview.
 
 With this we could do many things. In this case, there are two functions:
