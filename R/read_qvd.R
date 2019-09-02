@@ -10,9 +10,9 @@ read_qvd <- function(qvd_path,qlikview_exe = "C:/Program Files/QlikView/Qv.EXE")
   qvw_file <- shQuote(qvw_file,type = "cmd")
   program <- shQuote(qlikview_exe,type = "cmd")
   var_command <- "/V"
-  choose_qvd <- paste(var_command,"path=",shQuote(qvd_path,type = "cmd"),sep = "")
+  choose_qvd <- shQuote(paste(var_command,"path=",qvd_path,sep = ""),type = "cmd")
   temp_file <- paste0(tempfile(),".csv")
-  export_path <- paste(var_command,"export_path=",shQuote(temp_file,type = "cmd"),sep = "")
+  export_path <- shQuote(paste(var_command,"export_path=",temp_file,sep = ""),type = "cmd")
   reload_command <- "/R"
 
 
